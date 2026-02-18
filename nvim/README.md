@@ -1,85 +1,84 @@
-# Neovim on Windows
+# Neovim Setup on Windows
 
-This repository documents my Neovim setup on **Windows**, along with the PowerShell tools I use to create a clean and Linux-like terminal experience.
+This folder contains my personal Neovim setup for Windows.
+The goal is simple: keep the editor fast, keep the terminal clean, and keep the workflow close to what I use on Linux.
 
----
-
-## Platform
+## Environment
 
 - OS: Windows
-- Shell: PowerShell
+- Shell: PowerShell (7+)
+- Terminal: Windows Terminal
 - Editor: Neovim
 
----
+## What This Setup Focuses On
 
-## PowerShell Setup (Windows)
+- A minimal, readable UI
+- Fast editing with practical defaults
+- A Linux-like terminal experience on Windows
+- Plugins that solve real workflow needs without adding noise
 
-These tools are used to improve the PowerShell experience and productivity.
+## PowerShell Tooling
 
-### Tools Used
+These are the tools I use around Neovim:
 
-- **PowerShell 7+**  
-  Install from Microsoft:  
+- PowerShell 7+
+- Scoop
+- Git for Windows
+- Oh My Posh
+- Terminal Icons
+- PSReadLine
+- z (directory jumping)
+- PSFzf
+
+### Useful links
+
+- PowerShell install:
   <https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.5>
+- Oh My Posh docs:
+  <https://ohmyposh.dev/docs/installation/windows>
+- Oh My Posh GitHub:
+  <https://github.com/JanDeDobbeleer/oh-my-posh>
 
-- **Scoop** – Command-line installer
-- **Git for Windows** – Git support
-- **Oh My Posh** – Prompt theme engine
-- **Terminal Icons** – Folder and file icons
-- **PSReadLine** – Command editing and autocompletion
-- **z** – Directory jumper
-- **PSFzf** – Fuzzy finder
+Note: I will document the full PowerShell profile/config in a separate section later.
 
-> Shell configuration details will be added later.
+## Neovim Plugins Used
 
----
+### `mini.icons`
 
-## Terminal Customization
-
-### Oh My Posh
-
-Used to customize the PowerShell prompt and make it look closer to a Linux shell.
-
-- Documentation: <https://ohmyposh.dev/docs/installation/windows>
-- GitHub: <https://github.com/JanDeDobbeleer/oh-my-posh>
-
----
-
-## Neovim Plugins
-
-### Mini Icons
-
-Provides lightweight file and folder icons inside Neovim.
+Adds lightweight file and folder icons inside Neovim.
 
 - <https://github.com/nvim-mini/mini.icons>
 
-### Mini Surround
+### `mini.surround`
 
-Simple and fast surround operations (add, delete, replace).
+Fast surround editing (add, delete, replace surrounding characters).
 
 - <https://github.com/nvim-mini/mini.surround>
-
----
 
 ## Colorscheme
 
 ### Solarized Osaka
 
-A clean and modern colorscheme inspired by **Takuya Matsuyama**.
+I use Solarized Osaka for a clean and comfortable look.
+It is inspired by Takuya Matsuyama's style.
 
-- Theme: <https://github.com/craftzdog/solarized-osaka.nvim>
-- Inspiration: <https://github.com/craftzdog>
+- Theme:
+  <https://github.com/craftzdog/solarized-osaka.nvim>
+- Inspiration:
+  <https://github.com/craftzdog>
 
----
+## Current Status
 
-## Notes
+- Windows Neovim setup is active and used daily
+- Core plugin choices are stable
+- Shell customization docs are still in progress
 
-- Focused on simplicity and clarity
-- Optimized for Windows users
-- Shell setup documentation will be added soon
+## Roadmap
 
----
+- Add full PowerShell profile setup
+- Document installation steps from scratch (fresh Windows machine)
+- Add keymaps and plugin-by-plugin config notes
 
 ## Inspiration
 
-Inspired by minimal and clean development setups, especially the work of Takuya Matsuyama.
+This setup is inspired by clean, minimal development environments, especially Takuya Matsuyama's workflow style.
